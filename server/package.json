@@ -1,0 +1,11 @@
+{
+  "name": "reliefchain-server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "ethers": "^6.17.0"
+  }
+}
