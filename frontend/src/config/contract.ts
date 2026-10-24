@@ -36,6 +36,9 @@ export const CONTRACT_ADDRESS: string =
 // Expected network for the application
 export const EXPECTED_CHAIN = SEPOLIA_CONFIG;
 
+// Designated Sepolia Testnet Account & Contract Owner
+export const SEPOLIA_OWNER_ACCOUNT = '0xAF8795fB569Be966e272c011424f2D063A598a18';
+
 // Full ABI for DisasterRelief.sol
 export const DISASTER_RELIEF_ABI = [
   // --- Write Functions ---
