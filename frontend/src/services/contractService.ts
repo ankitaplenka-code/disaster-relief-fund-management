@@ -31,8 +31,8 @@ const INITIAL_DEMO_CAMPAIGNS: Campaign[] = [
       day: 'numeric',
       year: 'numeric',
     }),
-    amountRaised: '9.45',
-    amountRaisedWei: parseEther('9.45'),
+    amountRaised: '9.467',
+    amountRaisedWei: parseEther('9.467'),
     active: true,
     isEnded: false,
     progressPercent: 63,
@@ -71,7 +71,7 @@ const INITIAL_DEMO_CAMPAIGNS: Campaign[] = [
       'Funding 65 community deep-bore solar well pumps and rainwater harvesting check-dams for rural farming hamlets undergoing acute groundwater depletion.',
     target: '10.0',
     targetWei: parseEther('10.0'),
-    deadline: Math.floor(Date.now() / 1000) - 86400 * 3, // Ended
+    deadline: Math.floor(Date.now() / 1000) - 86400 * 3,
     deadlineFormatted: new Date(Date.now() - 86400 * 3 * 1000).toLocaleDateString('en-IN', {
       month: 'short',
       day: 'numeric',
@@ -86,6 +86,138 @@ const INITIAL_DEMO_CAMPAIGNS: Campaign[] = [
     category: 'Drought & Water',
     location: 'Maharashtra, India',
     image: 'https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 3,
+    name: 'cyclone Coastal Emergency Taskforce',
+    description: 'Emergency food distribution, temporary shelters, and medical outreach for cyclone-affected coastal regions.',
+    target: '10000.0',
+    targetWei: parseEther('10000.0'),
+    deadline: Math.floor(Date.now() / 1000) + 86400 * 30,
+    deadlineFormatted: new Date(Date.now() + 86400 * 30 * 1000).toLocaleDateString('en-IN', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+    }),
+    amountRaised: '202.500',
+    amountRaisedWei: parseEther('202.500'),
+    active: true,
+    isEnded: false,
+    progressPercent: 2,
+    status: 'Active',
+    category: 'Cyclone Relief',
+    location: 'Odisha / Bengal Coast, India',
+    image: 'https://images.unsplash.com/photo-1527482797697-8795b05a13fe?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 4,
+    name: 'Tamil nadu flood Assistance & Rehabilitation',
+    description: 'Providing dry rations, medicines, tarpaulins, and potable water tankers for low-lying urban flood victims.',
+    target: '120.0',
+    targetWei: parseEther('120.0'),
+    deadline: Math.floor(Date.now() / 1000) + 86400 * 20,
+    deadlineFormatted: new Date(Date.now() + 86400 * 20 * 1000).toLocaleDateString('en-IN', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+    }),
+    amountRaised: '0.0',
+    amountRaisedWei: parseEther('0.0'),
+    active: true,
+    isEnded: false,
+    progressPercent: 0,
+    status: 'Active',
+    category: 'Flood Relief',
+    location: 'Tamil Nadu, India',
+    image: 'https://images.unsplash.com/photo-1547683905-f686c993aae5?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 5,
+    name: 'Gujarat earthquake Relief & Temporary Shelters',
+    description: 'Rescue aid, pre-fab shelters, and immediate emergency trauma healthcare for earthquake displaced families.',
+    target: '120.0',
+    targetWei: parseEther('120.0'),
+    deadline: Math.floor(Date.now() / 1000) + 86400 * 45,
+    deadlineFormatted: new Date(Date.now() + 86400 * 45 * 1000).toLocaleDateString('en-IN', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+    }),
+    amountRaised: '31.120',
+    amountRaisedWei: parseEther('31.120'),
+    active: true,
+    isEnded: false,
+    progressPercent: 26,
+    status: 'Active',
+    category: 'Earthquake Relief',
+    location: 'Kutch / Gujarat, India',
+    image: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 6,
+    name: 'Lucknow Flood Relief Effort',
+    description: 'Harsh conditions requiring immediate community soup kitchens, clothes, and mosquito nets for submerged bastis.',
+    target: '120.0',
+    targetWei: parseEther('120.0'),
+    deadline: Math.floor(Date.now() / 1000) + 86400 * 12,
+    deadlineFormatted: new Date(Date.now() + 86400 * 12 * 1000).toLocaleDateString('en-IN', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+    }),
+    amountRaised: '1.120',
+    amountRaisedWei: parseEther('1.120'),
+    active: true,
+    isEnded: false,
+    progressPercent: 1,
+    status: 'Active',
+    category: 'Flood Relief',
+    location: 'Uttar Pradesh, India',
+    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 7,
+    name: 'Andra pradesh cyclone Relief & Rehabilitation',
+    description: 'Together, We Can Overcome the Storm! Help cyclone-affected families with food, shelter, clothing, and essential supplies. Your small contribution brings hope!',
+    target: '120.0',
+    targetWei: parseEther('120.0'),
+    deadline: Math.floor(Date.now() / 1000) + 86400 * 25,
+    deadlineFormatted: new Date(Date.now() + 86400 * 25 * 1000).toLocaleDateString('en-IN', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+    }),
+    amountRaised: '1.120',
+    amountRaisedWei: parseEther('1.120'),
+    active: true,
+    isEnded: false,
+    progressPercent: 1,
+    status: 'Active',
+    category: 'Cyclone Relief',
+    location: 'Visakhapatnam, Andhra Pradesh',
+    image: 'https://images.unsplash.com/photo-1527482797697-8795b05a13fe?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 8,
+    name: 'cyclone Coastal Emergency Food & Shelter Mission',
+    description: 'Immediate shelter kits, dry food packs, and clean drinking water for distressed coastal families.',
+    target: '120.0',
+    targetWei: parseEther('120.0'),
+    deadline: Math.floor(Date.now() / 1000) + 86400 * 28,
+    deadlineFormatted: new Date(Date.now() + 86400 * 28 * 1000).toLocaleDateString('en-IN', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+    }),
+    amountRaised: '0.0',
+    amountRaisedWei: parseEther('0.0'),
+    active: true,
+    isEnded: false,
+    progressPercent: 0,
+    status: 'Active',
+    category: 'Flood Relief',
+    location: 'Coastal Relief Zone',
+    image: 'https://images.unsplash.com/photo-1547683905-f686c993aae5?auto=format&fit=crop&w=800&q=80',
   },
 ];
 
@@ -159,10 +291,28 @@ const LOCAL_STORAGE_CAMPAIGNS_KEY = 'dr_custom_campaigns';
 const LOCAL_STORAGE_DONATIONS_KEY = 'dr_custom_donations';
 const LOCAL_STORAGE_WITHDRAWALS_KEY = 'dr_custom_withdrawals';
 
+// Safe JSON serialization helper that converts BigInt to string without crashing
+const safeStringify = (data: any): string => {
+  return JSON.stringify(data, (_, value) =>
+    typeof value === 'bigint' ? value.toString() : value
+  );
+};
+
 export const getLocalCampaigns = (): Campaign[] => {
   try {
     const raw = localStorage.getItem(LOCAL_STORAGE_CAMPAIGNS_KEY);
-    return raw ? JSON.parse(raw) : [];
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed)) return [];
+    return parsed.map((c: any) => ({
+      ...c,
+      targetWei: typeof c.targetWei === 'string' || typeof c.targetWei === 'bigint'
+        ? BigInt(c.targetWei)
+        : parseEther(String(c.target || '0')),
+      amountRaisedWei: typeof c.amountRaisedWei === 'string' || typeof c.amountRaisedWei === 'bigint'
+        ? BigInt(c.amountRaisedWei)
+        : parseEther(String(c.amountRaised || '0')),
+    }));
   } catch {
     return [];
   }
@@ -171,7 +321,8 @@ export const getLocalCampaigns = (): Campaign[] => {
 export const saveLocalCampaign = (campaign: Campaign) => {
   try {
     const current = getLocalCampaigns();
-    localStorage.setItem(LOCAL_STORAGE_CAMPAIGNS_KEY, JSON.stringify([campaign, ...current]));
+    const filtered = current.filter((c) => c.id !== campaign.id && c.name !== campaign.name);
+    localStorage.setItem(LOCAL_STORAGE_CAMPAIGNS_KEY, safeStringify([campaign, ...filtered]));
   } catch (err) {
     console.warn('Failed to save to local storage', err);
   }
@@ -180,7 +331,15 @@ export const saveLocalCampaign = (campaign: Campaign) => {
 export const getLocalDonations = (): DonationRecord[] => {
   try {
     const raw = localStorage.getItem(LOCAL_STORAGE_DONATIONS_KEY);
-    return raw ? JSON.parse(raw) : [];
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed)) return [];
+    return parsed.map((d: any) => ({
+      ...d,
+      amountWei: typeof d.amountWei === 'string' || typeof d.amountWei === 'bigint'
+        ? BigInt(d.amountWei)
+        : parseEther(String(d.amount || '0')),
+    }));
   } catch {
     return [];
   }
@@ -189,7 +348,8 @@ export const getLocalDonations = (): DonationRecord[] => {
 export const saveLocalDonation = (donation: DonationRecord) => {
   try {
     const current = getLocalDonations();
-    localStorage.setItem(LOCAL_STORAGE_DONATIONS_KEY, JSON.stringify([donation, ...current]));
+    const filtered = current.filter((d) => d.id !== donation.id);
+    localStorage.setItem(LOCAL_STORAGE_DONATIONS_KEY, safeStringify([donation, ...filtered]));
   } catch (err) {
     console.warn('Failed to save donation', err);
   }
@@ -198,7 +358,15 @@ export const saveLocalDonation = (donation: DonationRecord) => {
 export const getLocalWithdrawals = (): WithdrawalRecord[] => {
   try {
     const raw = localStorage.getItem(LOCAL_STORAGE_WITHDRAWALS_KEY);
-    return raw ? JSON.parse(raw) : [];
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed)) return [];
+    return parsed.map((w: any) => ({
+      ...w,
+      amountWei: typeof w.amountWei === 'string' || typeof w.amountWei === 'bigint'
+        ? BigInt(w.amountWei)
+        : parseEther(String(w.amount || '0')),
+    }));
   } catch {
     return [];
   }
@@ -207,7 +375,8 @@ export const getLocalWithdrawals = (): WithdrawalRecord[] => {
 export const saveLocalWithdrawal = (withdrawal: WithdrawalRecord) => {
   try {
     const current = getLocalWithdrawals();
-    localStorage.setItem(LOCAL_STORAGE_WITHDRAWALS_KEY, JSON.stringify([withdrawal, ...current]));
+    const filtered = current.filter((w) => w.id !== withdrawal.id);
+    localStorage.setItem(LOCAL_STORAGE_WITHDRAWALS_KEY, safeStringify([withdrawal, ...filtered]));
   } catch (err) {
     console.warn('Failed to save withdrawal', err);
   }
@@ -222,13 +391,13 @@ export const updateLocalCampaignBalance = (campaignId: number, ethAmountToSubtra
         const newRaised = Math.max(0, currentRaised - ethAmountToSubtract);
         return {
           ...c,
-          amountRaised: newRaised.toFixed(2),
+          amountRaised: newRaised.toFixed(3),
           amountRaisedWei: parseEther(newRaised.toFixed(4)),
         };
       }
       return c;
     });
-    localStorage.setItem(LOCAL_STORAGE_CAMPAIGNS_KEY, JSON.stringify(updated));
+    localStorage.setItem(LOCAL_STORAGE_CAMPAIGNS_KEY, safeStringify(updated));
   } catch (err) {
     console.warn('Failed to update campaign balance locally', err);
   }

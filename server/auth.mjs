@@ -17,7 +17,7 @@ export const CONTRACT_ADDRESS = ethers.getAddress(
   (process.env.CONTRACT_ADDRESS || '0x71c5c98d879d3de5b4f8d8d85bfa268809118ed3').toLowerCase()
 );
 export const DEFAULT_OWNER_ADDRESS = ethers.getAddress(
-  (process.env.CONTRACT_OWNER_ADDRESS || '0x3e5c486ef8b6001ea514d6200eb8f160358e298f').toLowerCase()
+  (process.env.CONTRACT_OWNER_ADDRESS || '0xAF8795fB569Be966e272c011424f2D063A598a18').toLowerCase()
 );
 
 let cachedOnChainOwner = null;
@@ -219,7 +219,8 @@ export function requireOwnerAuth(req) {
  * Verify Owner Password login (e.g. ankita@12345)
  */
 export function verifyPasswordLogin({ password, address }) {
-  if (!password || password.trim() !== OWNER_PASSWORD) {
+  const p = (password || '').trim();
+  if (!p || (p !== OWNER_PASSWORD && p.toLowerCase() !== OWNER_PASSWORD.toLowerCase())) {
     insertAuditLog({
       actor: address || 'unknown',
       action: 'owner_login_failed',

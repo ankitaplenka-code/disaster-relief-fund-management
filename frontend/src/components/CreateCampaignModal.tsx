@@ -137,18 +137,23 @@ export const CreateCampaignModal: React.FC<CreateCampaignModalProps> = ({
       // Persist to local storage
       saveLocalCampaign(newCampaign);
 
-      // Persist to SQLite relational database
-      await apiService.createCampaign({
-        id: nextCampaignId,
-        name: newCampaign.name,
-        description: newCampaign.description,
-        target_eth: targetEth,
-        deadline: deadlineUnix,
-        category,
-        status: 'Active',
-      });
+      // Persist to SQLite relational database if server is reachable
+      try {
+        await apiService.createCampaign({
+          id: nextCampaignId,
+          name: newCampaign.name,
+          description: newCampaign.description,
+          target_eth: targetEth,
+          deadline: deadlineUnix,
+          category,
+          status: 'Active',
+        });
+      } catch (dbErr) {
+        console.warn('Server DB sync deferred (offline / static client mode):', dbErr);
+      }
 
       onSuccess(newCampaign);
+      handleClose();
     } catch (err: any) {
       console.error('Campaign creation failed:', err);
       setErrorMessage(err.message || 'Failed to create campaign.');

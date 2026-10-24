@@ -1,0 +1,13 @@
+{
+  "name": "disaster-relief-fund-management",
+  "version": "1.0.0",
+  "description": "Transparent Disaster Relief Fund Management Platform with Web3 & Multi-Gateway Support",
+  "private": true,
+  "scripts": {
+    "start": "node server/server.mjs",
+    "server": "node server/server.mjs",
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "test:security": "node server/test_e2e_security.mjs"
+  }
+}

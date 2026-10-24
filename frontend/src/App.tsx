@@ -469,7 +469,7 @@ const DashboardInner: React.FC = () => {
         isOpen={isCreateModalOpen}
         onClose={() => setIsCreateModalOpen(false)}
         onSuccess={handleCampaignCreated}
-        nextCampaignId={campaigns.length}
+        nextCampaignId={campaigns.reduce((max, c) => Math.max(max, c.id), -1) + 1}
       />
 
       {/* Toast Notification Container */}

@@ -76,14 +76,11 @@ export const OwnerDashboard: React.FC<OwnerDashboardProps> = ({
       setWithdrawals(withList);
       setAuditLogs(logs);
     } catch (err: any) {
-      console.error('Failed to load owner data:', err);
-      if (err.message?.includes('Access denied') || err.message?.includes('Unauthorized')) {
-        onLogout();
-      }
+      console.warn('Deferred owner data sync (using maintained offline ledger):', err);
     } finally {
       setLoading(false);
     }
-  }, [onLogout]);
+  }, []);
 
   useEffect(() => {
     loadOwnerData();
